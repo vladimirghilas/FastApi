@@ -1,0 +1,47 @@
+###
+POST http://127.0.0.1:8000/items/
+Content-Type: application/json
+
+{
+  "name":"book",
+  "price": 100
+}
+###
+PUT http://127.0.0.1:8000/items/10
+Content-Type: application/json
+
+{
+  "name":"NEW book",
+  "price": 90.0
+}
+### GET items by id
+GET http://127.0.0.1:8000/items/?param=hello
+    &generated_in=PyCharm
+
+###
+POST http://127.0.0.1:8000/quotes
+Content-Type: application/json
+
+{
+  "text": "Это новая цитата"
+}
+
+### GET items by id
+GET http://127.0.0.1:8000/quotes/4
+
+### GET items list
+GET http://127.0.0.1:8000/quotes
+
+### GET items
+GET http://127.0.0.1:8000/
+
+###
+PUT http://127.0.0.1:8000/quotes/5
+Content-Type: application/json
+
+{
+  "text": "Это обновленная цитата"
+}
+
+### Delete quote
+DELETE http://127.0.0.1:8000/quotes/5
